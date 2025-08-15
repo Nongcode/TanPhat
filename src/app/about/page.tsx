@@ -179,7 +179,7 @@ export default function About() {
             pháp công nghệ và thiết bị bảo vệ môi trường; Giải pháp thiết bị vật
             tư làm sạch công nghiệp; Giải pháp quản trị doanh nghiệp ERP theo
             công nghệ 4.0.
-          </p>{" "}
+          </p>
           <br />
           <Image src="/images/htst.png" alt="" className="mx-auto fade-in-section" /> <br />
           <p className="text-lg leading-relaxed fade-in-section">
