@@ -190,8 +190,8 @@ export default function About() {
             chuyên nghiệp luôn sẵn sàng tư vấn và hỗ trợ khách hàng tại mọi miền
             đất nước. Không dừng lại ở thị trường nội địa, 
             với các dòng sản phẩm chủ lực và giải pháp trang thiết bị đa dạng cho dây chuyển lắp ráp sản xuất và đào tạo kỹ thuật, Tân Phát Etek đã và đang khẳng định vị thế trên thị trường quốc tế, đáp ứng nhu cầu của khách hàng tại nhiều quốc gia như Ấn Độ, Ả Rập Xê Út, Angola, Campuchia, Lào, ...
-            Sứ mệnh của chúng tôi là "Trao đi giá trị giải pháp công nghệ và kỹ thuật hiện đại - phù hợp vào sản xuất kinh doanh cho khách hàng để làm chủ kinh doanh của chính mình". Tầm nhìn của chúng tôi là "Trở thành tập đoàn hàng đầu Việt Nam trong lĩnh vực công nghệ, tự động hoá, 
-            thiết bị phụ trợ cho công nghiệp, bảo dưỡng và sửa chữa ô tô, góp phần kiến tạo giá trị tốt đẹp cho xã hội."
+            Sứ mệnh của chúng tôi là Trao đi giá trị giải pháp công nghệ và kỹ thuật hiện đại - phù hợp vào sản xuất kinh doanh cho khách hàng để làm chủ kinh doanh của chính mình. Tầm nhìn của chúng tôi là Trở thành tập đoàn hàng đầu Việt Nam trong lĩnh vực công nghệ, tự động hoá, 
+            thiết bị phụ trợ cho công nghiệp, bảo dưỡng và sửa chữa ô tô, góp phần kiến tạo giá trị tốt đẹp cho xã hội.
           </p> <br />
           <Image src="/images/lvhd.png" alt="" className="mx-auto fade-in-section" /> <br />
 
