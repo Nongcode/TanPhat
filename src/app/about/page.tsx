@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import HeroSlider from "@/components/HeroSlider";
 import { useEffect } from "react"; 
 import "@/styles/home.css";
+import Image from "next/image";
+import { Variants } from "framer-motion";
+
 
 export default function About() {
   useEffect(() => {
@@ -163,7 +166,7 @@ export default function About() {
               Lịch sử hình thành và phát triển của Tân Phát ETEK
             </h2>
           </div>
-          <img src="/images/lsht.png" alt="" className="mx-auto fade-in-section" /> <br />
+          <Image src="/images/lsht.png" alt="" className="mx-auto fade-in-section" /> <br />
           <p className="text-lg leading-relaxed fade-in-section">
             Hoạt động từ năm 1995 với tư cách là đại diện cho một số hãng thiết
             bị nổi tiếng của Châu Âu tại Việt Nam. Lấy ngành công nghiệp ô tô làm
@@ -178,7 +181,7 @@ export default function About() {
             công nghệ 4.0.
           </p>{" "}
           <br />
-          <img src="/images/htst.png" alt="" className="mx-auto fade-in-section" /> <br />
+          <Image src="/images/htst.png" alt="" className="mx-auto fade-in-section" /> <br />
           <p className="text-lg leading-relaxed fade-in-section">
             Với mạng lưới phân phối trải rộng khắp 63 tỉnh thành, Tân Phát Etek tự
             hào mang đến những sản phẩm và dịch vụ chất lượng cao đến tận tay quý
@@ -190,7 +193,7 @@ export default function About() {
             Sứ mệnh của chúng tôi là "Trao đi giá trị giải pháp công nghệ và kỹ thuật hiện đại - phù hợp vào sản xuất kinh doanh cho khách hàng để làm chủ kinh doanh của chính mình". Tầm nhìn của chúng tôi là "Trở thành tập đoàn hàng đầu Việt Nam trong lĩnh vực công nghệ, tự động hoá, 
             thiết bị phụ trợ cho công nghiệp, bảo dưỡng và sửa chữa ô tô, góp phần kiến tạo giá trị tốt đẹp cho xã hội."
           </p> <br />
-          <img src="/images/lvhd.png" alt="" className="mx-auto fade-in-section" /> <br />
+          <Image src="/images/lvhd.png" alt="" className="mx-auto fade-in-section" /> <br />
 
           <p className="text-lg leading-relaxed fade-in-section">
             Với những đóng góp tích cực vào sự phát triển kinh tế - xã hội, 
@@ -200,9 +203,9 @@ export default function About() {
             Tân Phát Etek đạt được là niềm tự hào của toàn thể cán bộ công nhân viên công ty. Chúng tôi cam kết sẽ luôn đồng hành cùng 
             khách hàng, đối tác và cộng đồng, tạo ra những giá trị bền vững cho xã hội.
           </p> <br />
-          <img src="/images/gt.png" alt="" className="fade-in-section"/> <br />
+          <Image src="/images/gt.png" alt="" className="fade-in-section"/> <br />
 
-          <img src="/images/kttp.png" alt="" className="fade-in-section"/>
+          <Image src="/images/kttp.png" alt="" className="fade-in-section"/>
         </div>
       </section>
     </>
