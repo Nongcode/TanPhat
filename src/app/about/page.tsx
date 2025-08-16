@@ -40,11 +40,6 @@ export default function About() {
     show: { transition: { staggerChildren: 0.2 } },
   };
 
-  const fadeUp = {
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-  };
-
   return (
     <>
       {/* Hero Section */}
@@ -148,110 +143,93 @@ export default function About() {
 
       <section className="relative py-16 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left side */}
-            <motion.div
-              variants={container}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <motion.h2
-                variants={fadeUp}
-                className="text-3xl font-semibold text-gray-900"
-              >
-                Sứ mệnh của chúng tôi
-              </motion.h2>
-              <motion.p
-                variants={fadeUp}
-                className="text-lg text-gray-600 font-normal"
-              >
+          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-20 items-start">
+            
+            {/* Cột trái */}
+            <div className="fade-in-section">
+              <h2 className="text-2xl font-bold mb-4">Sứ mệnh của chúng tôi</h2>
+              <p className="text-gray-600 mb-4">
                 Chúng tôi cam kết mang đến những giải pháp công nghệ hiện đại,
-                sáng tạo và hiệu quả cho doanh nghiệp. Mục tiêu của chúng tôi là
-                giúp khách hàng tối ưu hóa quy trình kinh doanh thông qua công
-                nghệ.
-              </motion.p>
-              <motion.p
-                variants={fadeUp}
-                className="text-lg text-gray-600 font-normal"
-              >
-                Với đội ngũ chuyên gia giàu kinh nghiệm, chúng tôi tự tin có thể
-                đáp ứng mọi yêu cầu từ đơn giản đến phức tạp.
-              </motion.p>
-
-              <motion.div
-                variants={fadeUp}
-                className="flex space-x-8 pt-4"
-              >
+                sáng tạo và hiệu quả cho doanh nghiệp...
+              </p>
+              <div className="flex gap-10 mt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-semibold text-indigo-600">
-                    50+
-                  </div>
+                  <div className="text-3xl font-semibold text-indigo-600">50+</div>
                   <div className="text-sm text-gray-500">Dự án hoàn thành</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-semibold text-indigo-600">
-                    30000+
-                  </div>
-                  <div className="text-sm text-gray-500">
-                    Khách hàng hài lòng
-                  </div>
+                  <div className="text-3xl font-semibold text-indigo-600">30,000+</div>
+                  <div className="text-sm text-gray-500">Khách hàng hài lòng</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-semibold text-indigo-600">
-                    30+
-                  </div>
+                  <div className="text-3xl font-semibold text-indigo-600">30+</div>
                   <div className="text-sm text-gray-500">Năm kinh nghiệm</div>
                 </div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
-            {/* Right side */}
-            <motion.div
-              variants={container}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-              className="bg-gray-100 rounded-lg p-8"
-            >
-              <motion.h3
-                variants={fadeUp}
-                className="text-2xl font-semibold text-gray-900 mb-6"
-              >
-                Giá trị cốt lõi <br />
-                <span className="text-indigo-600">
-                  Hội tụ tinh hoa - Tiên phong giải pháp
-                </span>
-              </motion.h3>
-              <ul className="space-y-4">
-                {coreValues.map((value, i) => (
-                  <motion.li
-                    key={i}
-                    variants={fadeUp}
-                    className="flex items-start"
-                  >
-                    <svg
-                      className="h-6 w-6 text-indigo-600 mt-1 mr-3"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span className="text-gray-600 font-normal">{value}</span>
-                  </motion.li>
-                ))}
+            {/* Cột phải */}
+            <div className="pl-8 fade-in-section" style={{backgroundColor: "whitesmoke", padding:15, borderRadius:10}}>
+              <h2 className="text-2xl font-bold mb-4">Giá trị cốt lõi</h2>
+              <p className="text-2xl font-medium mb-6">
+                Nhân - Lễ - Nghĩa - Trí - Tín
+              </p>
+              <ul className="space-y-3 text-gray-700 list-disc list-inside" style={{marginTop:5}}>
+                <li>Đổi mới và sáng tạo trong mọi dự án</li>
+                <li>Đặt khách hàng làm trung tâm của sự phát triển</li>
+                <li>Trách nhiệm xã hội và phát triển bền vững</li>
+                <li>Chia sẻ tri thức và phát triển nhân tài</li>
               </ul>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-semibold text-grey-300 sm:text-4xl">
+              Các công ty thành viên
+            </h2>
+          </div>
+
+          <div className="mt-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">          
+              {/* Ảnh 1 */}
+              <div
+                className=" fade-in-section rounded-lg h-64 shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+                style={{
+                  backgroundImage: "url('/images/etek.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center"
+                }}
+              ></div>
+
+              {/* Ảnh 2 */}
+              <div
+                className=" fade-in-section rounded-lg h-64 shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+                style={{
+                  backgroundImage: "url('/images/etek-green.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center"
+                }}
+              ></div>
+
+              {/* Ảnh 3 */}
+              <div
+                className=" fade-in-section rounded-lg h-64 shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+                style={{
+                  backgroundImage: "url('/images/etek-power.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center"
+                }}
+              ></div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>  
 
       {/* Team Section */}
       <section className="py-16 bg-gray-50">
