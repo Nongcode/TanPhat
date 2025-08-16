@@ -4,7 +4,7 @@ import HeroSlider from "@/components/HeroSlider";
 import { useEffect } from "react"; 
 import "@/styles/home.css";
 import Image from "next/image";
-import { Variants } from "framer-motion";
+import FeaturedNewsSlider from "@/components/FeaturedNewsSlider";
 
 
 export default function About() {
@@ -51,6 +51,101 @@ export default function About() {
       <HeroSlider />
 
       {/* Content Section */}
+      <section className="bg-white py-10 px-6 fade-in-section">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="px-4 md:px-8">
+            {/* Quote */}
+            <div className="bg-gray-100 p-6 rounded-md mb-6">
+              <p className="text-xl md:text-2xl italic font-medium text-gray-800">
+                <span className="text-3xl text-blue-600">&quot;</span>
+                Hội tụ tinh hoa - Tiên phong giải pháp.
+                <span className="text-3xl text-blue-600">&quot;</span>
+              </p>
+            </div>
+
+            {/* Description */}
+            <div className="text-gray-700 space-y-4 text-justify leading-relaxed">
+              <p>
+                Tôi là <strong>Nguyễn Minh Tân</strong>, hiện đang là tổng giám đốc Tân Phát ETEK, tôi đã không
+                ngừng học hỏi và phát triển bản thân qua nhiều dự án khác nhau.
+              </p>
+              <p>
+                Với mong muốn đội ngũ quản lý của ETEK hãy phát huy hơn nữa sứ mệnh chia sẻ, đào tạo những kiến thức,
+                kinh nghiệm của mình, đặc biệt về công nghệ và kỹ thuật cho các thế hệ kế cận của công ty,
+                giữ vững thế mạnh là đào tạo, góp phần phát triển bền vững cho doanh nghiệp.
+              </p>
+              <p>
+                Tôi tin rằng giá trị cốt lõi của sự nghiệp nằm ở sự kiên định, sáng tạo
+                và trách nhiệm với cộng đồng.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="flex flex-col items-center md:items-start">
+            <Image
+              src="/images/tgd.jpg"
+              alt="Ảnh cá nhân"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg"
+            />
+            <div className="mt-6 text-center md:text-left">
+              <p className="font-semibold">Tổng Giám đốc Tân Phát ETEK</p>
+              <p className="text-gray-700 font-bold text-lg">Ông Nguyễn Minh Tân</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-10 px-6 fade-in-section">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Left Image */}
+          <div className="flex flex-col items-center md:items-start">
+            <Image
+              src="/images/7.jpg"
+              alt="Ảnh cá nhân"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg"
+            />
+            <div className="mt-6 text-center md:text-left">
+              <p className="font-semibold">Chủ tịch HĐQT Tân Phát ETEK</p>
+              <p className="text-gray-700 font-bold text-lg">Ông Nguyễn Trung Phong</p>
+            </div>
+          </div>
+
+          {/* Right Content */}
+          <div className="px-4 md:px-8">
+            {/* Quote */}
+            <div className="bg-gray-100 p-6 rounded-md mb-6">
+              <p className="text-xl md:text-2xl italic font-medium text-gray-800">
+                <span className="text-3xl text-blue-600">&quot;</span>
+                Hội tụ tinh hoa - Tiên phong giải pháp.
+                <span className="text-3xl text-blue-600">&quot;</span>
+              </p>
+            </div>
+
+            {/* Description */}
+            <div className="text-gray-700 space-y-4 text-justify leading-relaxed">
+              <p>
+                Tôi là <strong>Nguyễn Trung Phong</strong>, hiện đang là Chủ tịch HĐQT Tân Phát ETEK, tôi đã không
+                ngừng học hỏi và phát triển bản thân qua nhiều dự án khác nhau.
+              </p>
+              <p>
+                Với mong muốn đội ngũ quản lý của ETEK hãy phát huy hơn nữa sứ mệnh chia sẻ, đào tạo những kiến thức,
+                kinh nghiệm của mình, đặc biệt về công nghệ và kỹ thuật cho các thế hệ kế cận của công ty,
+                giữ vững thế mạnh là đào tạo, góp phần phát triển bền vững cho doanh nghiệp.
+              </p>
+              <p>
+                Tôi tin rằng giá trị cốt lõi của sự nghiệp nằm ở sự kiên định, sáng tạo
+                và trách nhiệm với cộng đồng.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="relative py-16 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -166,7 +261,7 @@ export default function About() {
               Lịch sử hình thành và phát triển của Tân Phát ETEK
             </h2>
           </div>
-          <Image src="/images/lsht.png" alt="" className="mx-auto fade-in-section"   width={1200} 
+          <Image src="/images/lsht.png" alt="lịch sử hình thành" className="mx-auto fade-in-section"   width={1200} 
   height={500} /> <br />
           <p className="text-lg leading-relaxed fade-in-section">
             Hoạt động từ năm 1995 với tư cách là đại diện cho một số hãng thiết
@@ -182,7 +277,7 @@ export default function About() {
             công nghệ 4.0.
           </p>
           <br />
-          <Image src="/images/htst.png" alt="" className="mx-auto fade-in-section"   width={1200} 
+          <Image src="/images/htst.png" alt="hệ thống sinh thái" className="mx-auto fade-in-section"   width={1200} 
   height={500} /> <br />
           <p className="text-lg leading-relaxed fade-in-section">
             Với mạng lưới phân phối trải rộng khắp 63 tỉnh thành, Tân Phát Etek tự
@@ -201,7 +296,7 @@ export default function About() {
             Việt Nam trong lĩnh vực công nghệ, tự động hoá, 
             thiết bị phụ trợ cho công nghiệp, bảo dưỡng và sửa chữa ô tô, góp phần kiến tạo giá trị tốt đẹp cho xã hội.
           </p> <br />
-          <Image src="/images/lvhd.png" alt="" className="mx-auto fade-in-section"   width={1200} 
+          <Image src="/images/lvhd.png" alt="lĩnh vực hoạt động" className="mx-auto fade-in-section"   width={1200} 
   height={500} /> <br />
 
           <p className="text-lg leading-relaxed fade-in-section">
@@ -212,13 +307,14 @@ export default function About() {
             Tân Phát Etek đạt được là niềm tự hào của toàn thể cán bộ công nhân viên công ty. Chúng tôi cam kết sẽ luôn đồng hành cùng 
             khách hàng, đối tác và cộng đồng, tạo ra những giá trị bền vững cho xã hội.
           </p> <br />
-          <Image src="/images/gt.png" alt="" className="fade-in-section"   width={1200} 
+          <Image src="/images/gt.png" alt="giải thưởng" className="fade-in-section"   width={1200} 
   height={500} /> <br />
 
-          <Image src="/images/kttp.png" alt="" className="fade-in-section"   width={1200} 
+          <Image src="/images/kttp.png" alt="khen thưởng" className="fade-in-section"   width={1200} 
   height={500} />
         </div>
       </section>
+      <FeaturedNewsSlider/>
     </>
   );
 }
