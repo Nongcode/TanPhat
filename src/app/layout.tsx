@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroSlider from "@/components/HeroSlider";
 
 export const metadata: Metadata = {
   title: "MyWebsite - Giải pháp công nghệ hiện đại",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className="antialiased">
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
           <Header />
+          <HeroSlider />
           <main>
             {children}
           </main>

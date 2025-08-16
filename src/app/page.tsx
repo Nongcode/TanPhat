@@ -1,7 +1,6 @@
 "use client";
 import "@/styles/home.css";
 import Image from "next/image";
-import HeroSlider from "@/components/HeroSlider";
 import { useEffect } from "react";
 
 import FeaturedNewsSlider from "@/components/FeaturedNewsSlider";
@@ -28,9 +27,6 @@ export default function Home() {
   }, []);
   return (
     <>
-      {/* Hero Slider */}
-      <HeroSlider />
-
       {/* Features Section */}
       <section className="py-16"style={{
               backgroundImage: "url('/images/back-group1.jpg')",

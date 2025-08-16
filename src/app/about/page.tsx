@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import HeroSlider from "@/components/HeroSlider";
 import { useEffect } from "react"; 
 import "@/styles/home.css";
 import Image from "next/image";
@@ -42,8 +41,6 @@ export default function About() {
 
   return (
     <>
-      {/* Hero Section */}
-      <HeroSlider />
 
       {/* Content Section */}
       <section className="bg-white py-10 px-6 fade-in-section">
