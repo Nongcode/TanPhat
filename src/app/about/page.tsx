@@ -151,16 +151,20 @@ export default function About() {
               </p>
               <div className="flex gap-10 mt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-semibold text-indigo-600">50+</div>
+                  <div className="text-3xl font-semibold text-indigo-600">100+</div>
                   <div className="text-sm text-gray-500">Dự án hoàn thành</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-semibold text-indigo-600">30,000+</div>
+                  <div className="text-3xl font-semibold text-indigo-600">4000+</div>
                   <div className="text-sm text-gray-500">Khách hàng hài lòng</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-semibold text-indigo-600">30+</div>
                   <div className="text-sm text-gray-500">Năm kinh nghiệm</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-semibold text-indigo-600">50000+</div>
+                  <div className="text-sm text-gray-500">Sản phẩm thiết bị</div>
                 </div>
               </div>
             </div>

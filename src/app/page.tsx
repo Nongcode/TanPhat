@@ -323,7 +323,11 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
+          </div> <br />
+          <Image src="/images/htst.png" alt="hệ thống sinh thái" className="mx-auto fade-in-section"   width={1200} 
+  height={500} /> <br />
+           <Image src="/images/kttp.png" alt="hệ thống sinh thái" className="mx-auto fade-in-section"   width={1200} 
+  height={500} />
           <FeaturedNewsSlider/>
         </div>       
       </section>     

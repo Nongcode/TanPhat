@@ -31,70 +31,70 @@ export default function Header() {
                     {/* Vận tải */}
                     <li className="relative group">
                       <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                        <Link href="/industry" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                           Thiết bị sửa chữa bảo dưỡng
                         </Link>
                       </button>
                     </li>
                     <li className="relative group">
                       <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                        <Link href="/industry" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                           Thiết bị vật tư tự động
                         </Link>
                       </button>
                     </li>
                     <li className="relative group">
                       <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                        <Link href="/industry" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                           Thiết bị tự động hóa
                         </Link>
                       </button>
                     </li>
                     <li className="relative group">
                       <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                        <Link href="/industry" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                           Phần mềm quản trị
                         </Link>
                       </button>
                     </li>
                     <li className="relative group">
                       <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                        <Link href="/industry" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                           Thiết bị đăng kiểm
                         </Link>
                       </button>
                     </li>
                     <li className="relative group">
                       <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                        <Link href="/industry" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                           Thiết bị vật tư làm sạch
                         </Link>
                       </button>
                     </li>
                     <li className="relative group">
                       <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                        <Link href="/industry" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                           Thiết bị dạy nghề
                         </Link>
                       </button>
                     </li>
                     <li className="relative group">
                       <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                        <Link href="/industry" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                           Thiết bị bảo vệ môi trường
                         </Link>
                       </button>
                     </li>
                     <li className="relative group">
                       <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                        <Link href="/industry" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                           Thiết bị đào tạo kỹ thuật
                         </Link>
                       </button>
                     </li>
                     <li className="relative group">
                       <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                        <Link href="/industry" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                           Thiết bị ngành nhiệt và hơi nhiệt
                         </Link>
                       </button>
@@ -102,97 +102,13 @@ export default function Header() {
                   </ul>
                 </div>
               </div>
-
-              <div className="relative group">
-                {/* Cấp 1 */}
-                <button className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                  Sản phẩm
-                </button>
-
-                {/* Menu cấp 2 */}
-                <div className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md z-10">
-                  <ul className="min-w-[300px]">
-                    
-                    {/* Vận tải */}
-                    <li className="relative group">
-                      <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                          Thiết bị sửa chữa bảo dưỡng
-                        </Link>
-                      </button>
-                    </li>
-                    <li className="relative group">
-                      <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                          Thiết bị vật tư tự động
-                        </Link>
-                      </button>
-                    </li>
-                    <li className="relative group">
-                      <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                          Thiết bị tự động hóa
-                        </Link>
-                      </button>
-                    </li>
-                    <li className="relative group">
-                      <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                          Phần mềm quản trị
-                        </Link>
-                      </button>
-                    </li>
-                    <li className="relative group">
-                      <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                          Thiết bị đăng kiểm
-                        </Link>
-                      </button>
-                    </li>
-                    <li className="relative group">
-                      <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                          Thiết bị vật tư làm sạch
-                        </Link>
-                      </button>
-                    </li>
-                    <li className="relative group">
-                      <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                          Thiết bị dạy nghề
-                        </Link>
-                      </button>
-                    </li>
-                    <li className="relative group">
-                      <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                          Thiết bị bảo vệ môi trường
-                        </Link>
-                      </button>
-                    </li>
-                    <li className="relative group">
-                      <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                          Thiết bị đào tạo kỹ thuật
-                        </Link>
-                      </button>
-                    </li>
-                    <li className="relative group">
-                      <button className="w-full text-left px-4 py-2 hover:bg-indigo-100" >                                 
-                        <Link href="/#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                          Thiết bị ngành nhiệt và hơi nhiệt
-                        </Link>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+             
+              <Link href="/product" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
+                Sản phẩm
+              </Link>
 
               <Link href="/article" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                 Tin tức
-              </Link>
-              <Link href="/services" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
-                Dịch vụ
               </Link>
               <Link href="/about" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-normal transition-colors">
                 Về chúng tôi
