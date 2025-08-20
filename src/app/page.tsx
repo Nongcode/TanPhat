@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 import FeaturedNewsSlider from "@/components/FeaturedNewsSlider";
+import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
   useEffect(() => {
@@ -328,6 +329,8 @@ export default function Home() {
   height={500} /> <br />
            <Image src="/images/kttp.png" alt="hệ thống sinh thái" className="mx-auto fade-in-section"   width={1200} 
   height={500} />
+
+          <VideoSection/>
           <FeaturedNewsSlider/>
         </div>       
       </section>     
