@@ -59,7 +59,7 @@ export default function ChatBox() {
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.9 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="fixed right-4 bottom-20 w-80 bg-white shadow-2xl rounded-2xl overflow-hidden z-50"
           >
             <div className="bg-blue-600 text-white p-3 font-semibold">

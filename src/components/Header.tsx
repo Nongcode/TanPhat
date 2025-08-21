@@ -1,7 +1,19 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useRef} from "react";
 
 export default function Header() {
+  const tickerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ticker = tickerRef.current;
+    if (ticker) {
+      const content = ticker.innerHTML;
+      ticker.innerHTML += content; // nhân đôi nội dung để cuộn liên tục
+    }
+  }, []);
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200" style={{marginBottom: 10}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -120,6 +132,38 @@ export default function Header() {
           </nav>
         </div>
       </div>
+      <div className="w-full bg-blue-400 text-white overflow-hidden">
+        <div
+          ref={tickerRef}
+          className="whitespace-nowrap flex animate-scroll px-6 py-2 text-sm"
+        >
+          <span className="mx-8">
+            🎉 Chào mừng bạn đến với Tân Phát Etek - Hội tụ tinh hoa - Tiên phong giải pháp!
+          </span>
+          <span className="mx-8">
+            🚀 Ưu đãi đặc biệt: Giảm giá 20% cho sản phẩm mới trong tháng này!
+          </span>
+          <span className="mx-8">
+            📢 Liên hệ ngay với chúng tôi để được tư vấn chi tiết.
+          </span>
+        </div>
+      </div>
+
+      {/* CSS cho animation */}
+      <style jsx>{`
+        .animate-scroll {
+          display: inline-flex;
+          animation: scroll-left 15s linear infinite;
+        }
+        @keyframes scroll-left {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
     </header>
   );
 }

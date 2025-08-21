@@ -5,6 +5,8 @@ import { useEffect } from "react";
 
 import FeaturedNewsSlider from "@/components/FeaturedNewsSlider";
 import VideoSection from "@/components/VideoSection";
+import Comment from "@/components/Comment";
+import AwardSection from "@/components/AwardSection";
 
 export default function Home() {
   useEffect(() => {
@@ -26,58 +28,14 @@ export default function Home() {
       sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
+  const partners = [
+    { id: 1, logo: "/images/dt1.jpg", alt: "ETEK POWER" },
+    { id: 2, logo: "/images/dt2.webp", alt: "WETEK" },
+    { id: 3, logo: "/images/dt4.webp", alt: "DUCLOCSON" },
+    { id: 4, logo: "/images/dt3.png", alt: "ETEK GREEN" },
+  ];
   return (
     <>
-      {/* Features Section */}
-      <section className="py-16"style={{
-              backgroundImage: "url('/images/back-group1.jpg')",
-              backgroundSize: "cover",
-              backgroundPosition: "center", marginTop: 20, marginBottom: 20
-            }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-              Các công ty thành viên
-            </h2>
-          </div>
-
-          <div className="mt-20">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">          
-              {/* Ảnh 1 */}
-              <div
-                className=" fade-in-section rounded-lg h-64 shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
-                style={{
-                  backgroundImage: "url('/images/etek.png')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center"
-                }}
-              ></div>
-
-              {/* Ảnh 2 */}
-              <div
-                className=" fade-in-section rounded-lg h-64 shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
-                style={{
-                  backgroundImage: "url('/images/etek-green.jpg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center"
-                }}
-              ></div>
-
-              {/* Ảnh 3 */}
-              <div
-                className=" fade-in-section rounded-lg h-64 shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
-                style={{
-                  backgroundImage: "url('/images/etek-power.jpg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center"
-                }}
-              ></div>
-
-            </div>
-          </div>
-
-        </div>
-      </section>    
 
       {/* CTA Section */}
       <section className="cta-section">              
@@ -327,11 +285,41 @@ export default function Home() {
           </div> <br />
           <Image src="/images/htst.png" alt="hệ thống sinh thái" className="mx-auto fade-in-section"   width={1200} 
   height={500} /> <br />
-           <Image src="/images/kttp.png" alt="hệ thống sinh thái" className="mx-auto fade-in-section"   width={1200} 
-  height={500} />
-
+          <div className="fade-in-section">
+          <AwardSection/>
+          </div>
+           
+          <div className="fade-in-section">
+          <Comment/>
+          </div>
+          
           <VideoSection/>
           <FeaturedNewsSlider/>
+          <section className="py-16 bg-white fade-in-section" style={{marginBottom:0}}> 
+            <div className="max-w-6xl mx-auto px-4 text-center">
+              {/* Tiêu đề */}
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
+                Đối tác
+              </h2>
+              <div className="w-12 h-1 bg-red-600 mx-auto mt-3 mb-12"></div>
+
+              {/* Logo đối tác */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+                {partners.map((partner) => (
+                  <div
+                    key={partner.id}
+                    className="flex items-center justify-center w-40 h-20" // khung chuẩn cho logo
+                  >
+                    <img
+                      src={partner.logo}
+                      alt={partner.alt}
+                      className="max-h-16 object-contain" // luôn giữ tỉ lệ, không méo
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
         </div>       
       </section>     
     </>
