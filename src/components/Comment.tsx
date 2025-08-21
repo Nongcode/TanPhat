@@ -76,7 +76,7 @@ export default function TestimonialSection() {
                 <div className="slide-item bg-white p-6 rounded-xl shadow-lg relative h-full flex flex-col justify-between transition-all duration-500 ease-in-out">
                     {/* Nội dung */}
                     <p className="text-gray-700 italic mb-6 relative">
-                    <span className="text-4xl text-blue-600 absolute -top-4 -left-2">&qout;</span>
+                    <span className="text-4xl text-blue-600 absolute -top-4 -left-2"></span>
                     {item.content}
                     </p>
 
