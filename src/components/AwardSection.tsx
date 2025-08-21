@@ -43,7 +43,7 @@ export default function AwardSection() {
           tiếp thêm sức mạnh để Tân Phát Etek không ngừng đổi mới và vươn xa hơn nữa. Những giải thưởng mà Tân Phát Etek
            đạt được là niềm tự hào của toàn thể cán bộ công nhân viên công ty. Chúng tôi cam kết sẽ luôn đồng hành cùng khách hàng, đối tác và cộng đồng, 
            tạo ra những giá trị bền vững cho xã hội.
-            Với tinh thần "Đam mê - Đổi mới - Sáng tạo", Công đoàn Tân Phát Etek
+            Với tinh thần &quot;Đam mê - Đổi mới - Sáng tạo&quot;, Công đoàn Tân Phát Etek
             đã không ngừng nỗ lực trong việc phát huy vai trò, hoàn thành xuất
             sắc nhiệm vụ tại cơ sở. Ngoài ra, còn có những đóng góp tích cực vào
             phong trào thi đua cấp Huyện, cấp Thành phố và đã được ghi nhận qua
