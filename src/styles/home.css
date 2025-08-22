@@ -224,15 +224,6 @@
   background: #f1f1f1;
 }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #5a67d8, #6b46c1);
-}
-
 /* Loading Animation */
 .loading-spinner {
   border: 3px solid #f3f3f3;
@@ -288,3 +279,4 @@
   opacity: 1;
   transform: translateY(0);
 }
+

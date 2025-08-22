@@ -50,7 +50,7 @@ const testimonials = [
 export default function TestimonialSection() {
   return (
     <section className="py-16" style={{ backgroundImage: "url('/images/bgnew1.jpg')" }}>
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-700 mb-12">
           Khách hàng và đối tác nói về chúng tôi
         </h2> <br />

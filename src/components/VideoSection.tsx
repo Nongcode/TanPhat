@@ -47,7 +47,7 @@ export default function VideoSection() {
 
   return (
     <section className="py-16 bg-gray-50 fade-in-section opacity-0 transition-opacity duration-1000">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-2xl font-bold mb-8 text-center">
           Video
           <span className="block w-16 h-1 bg-red-500 mx-auto mt-2"></span>

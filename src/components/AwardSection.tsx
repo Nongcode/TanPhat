@@ -31,7 +31,7 @@ export default function AwardSection() {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div className="w-full px-[85px] px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Bên trái: Text */}
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
@@ -42,12 +42,12 @@ export default function AwardSection() {
           Những phần thưởng này không chỉ là sự ghi nhận xứng đáng cho những nỗ lực không ngừng nghỉ của chúng tôi mà còn là nguồn động viên to lớn, 
           tiếp thêm sức mạnh để Tân Phát Etek không ngừng đổi mới và vươn xa hơn nữa. Những giải thưởng mà Tân Phát Etek
            đạt được là niềm tự hào của toàn thể cán bộ công nhân viên công ty. Chúng tôi cam kết sẽ luôn đồng hành cùng khách hàng, đối tác và cộng đồng, 
-           tạo ra những giá trị bền vững cho xã hội.
+           tạo ra những giá trị bền vững cho xã hội. <br />
             Với tinh thần &quot;Đam mê - Đổi mới - Sáng tạo&quot;, Công đoàn Tân Phát Etek
             đã không ngừng nỗ lực trong việc phát huy vai trò, hoàn thành xuất
             sắc nhiệm vụ tại cơ sở. Ngoài ra, còn có những đóng góp tích cực vào
             phong trào thi đua cấp Huyện, cấp Thành phố và đã được ghi nhận qua
-            loạt giải thưởng danh giá giúp Công ty nâng tầm giá trị thương hiệu.
+            loạt giải thưởng danh giá giúp Công ty nâng tầm giá trị thương hiệu. <br />
             Tân Phát Etek luôn tâm niệm rằng, sự phát triển của doanh nghiệp gắn liền với sự thịnh vượng của cộng đồng. 
             Chính vì vậy, chúng tôi thường xuyên
             tham gia thực hiện các hoạt động thiện nguyện ý nghĩa nhằm chia sẻ khó khăn và mong muốn đóng góp một phần 

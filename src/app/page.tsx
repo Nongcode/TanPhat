@@ -7,6 +7,7 @@ import FeaturedNewsSlider from "@/components/FeaturedNewsSlider";
 import VideoSection from "@/components/VideoSection";
 import Comment from "@/components/Comment";
 import AwardSection from "@/components/AwardSection";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -34,18 +35,66 @@ export default function Home() {
     { id: 3, logo: "/images/dt4.webp", alt: "DUCLOCSON" },
     { id: 4, logo: "/images/dt3.png", alt: "ETEK GREEN" },
   ];
+  const items = [
+    { src: "/images/tpetek.jpg", title: "TÂN PHÁT ETEK" },
+    { src: "/images/etek.png", title: "ETEK", href: "https://etek.com.vn/"},
+    { src: "/images/etek-power.jpg", title: "ETEK POWER", href: "https://etekpower.vn/" },
+    { src: "/images/etek-green.jpg", title: "ETEK GREEN", href:"https://etekgreen.vn/" },
+  ];
+
   return (
     <>
 
       {/* CTA Section */}
-      <section className="cta-section">              
+      <section className="cta-section"> 
+      <div
+        className="w-full shadow-lg px-8 py-12 text-center mt-0"
+        style={{ backgroundImage: "url('/images/bgnew.jpg')" }}
+      >
+        <h2 className="text-white text-3xl mb-2 tracking-wide">
+          CHÀO MỪNG BẠN ĐẾN VỚI
+        </h2>
+        <h1 className="text-white font-bold text-4xl mb-10">
+          TÂN PHÁT ETEK <br />
+          Hội tụ tinh hoa - Tiên phong giải pháp
+        </h1>
+
+        <div className=" py-10">
+          <h2 className="text-center text-3xl font-bold mb-8 text-white">
+            Hệ sinh thái Tân Phát ETEK
+          </h2> <br />
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-5xl mx-auto">
+            {items.map((item, i) => (
+              <Link 
+                key={i} 
+                href={item.href ?? "#"} 
+                target="_blank" // nếu muốn mở tab mới
+                className="flex flex-col items-center transition-transform duration-300 hover:scale-105"
+              >
+                <div className="w-28 h-28 rounded-full shadow-md overflow-hidden bg-white flex items-center justify-center ">
+                  <Image
+                    src={item.src}
+                    alt={item.title}
+                    width={112}
+                    height={112}
+                    className="object-contain"
+                  />
+                </div> <br />
+                <p className="mt-3 text-sm font-medium text-white text-center">
+                  {item.title}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>       
+        
         <div className="bg-white py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <div className="bg-white text-4xl" style={{display: "flex", justifyContent: "center", marginBottom: 15}}>
-            <h2>Lĩnh vực hoạt động</h2>
-            
+            <h2>Lĩnh vực hoạt động</h2> 
           </div> 
-          <a href="#" style={{display: "flex", justifyContent:"center", color:"green", fontSize: 20}}>Xem tất cả</a>
-          <div className="fade-in-section max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <a href="#" style={{display: "flex", justifyContent:"center", color:"green", fontSize: 20}}>Xem tất cả</a> <br />
+          <div className="fade-in-section w-full px-[85px] grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Phần nội dung bên trái */}
             <div className="text-left">
               <h2 className="text-4xl font-bold text-yellow-400 mb-6">
@@ -90,7 +139,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="fade-in-section max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="fade-in-section w-full px-[85px] grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             
             {/* Phần hình ảnh bên trái */}
             <div className="flex justify-center lg:justify-start">
@@ -138,7 +187,7 @@ export default function Home() {
           </div>
           <br />
 
-          <div className="fade-in-section max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="fade-in-section w-full px-[85px] grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Phần nội dung bên trái */}
             <div className="text-left">
               <h2 className="text-4xl font-bold text-yellow-400 mb-6">
@@ -187,7 +236,7 @@ export default function Home() {
           </div>
                 <br />
 
-          <div className="fade-in-section max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="fade-in-section w-full px-[85px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             
             {/* Phần hình ảnh bên trái */}
             <div className="flex justify-center lg:justify-start">
@@ -237,7 +286,7 @@ export default function Home() {
           <br />
 
 
-          <div className="fade-in-section max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="fade-in-section w-full px-[85px] grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Phần nội dung bên trái */}
             <div className="text-left">
               <h2 className="text-4xl font-bold text-yellow-400 mb-6">
@@ -278,7 +327,7 @@ export default function Home() {
                 <img
                   src="/images/bvmt.jpg" // Thay bằng đường dẫn ảnh của bạn
                   alt="Xe VIP"
-                  className="rounded-xl shadow-lg max-w-full h-auto"
+                  className="rounded-xl shadow-lg max-w-full h-[400px]"
                 />
               </div>
             </div>

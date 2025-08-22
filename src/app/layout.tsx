@@ -41,21 +41,21 @@ export default function RootLayout({
               <img src="/images/zalo.png" alt="Zalo" className="w-7 h-7" />
             </a>
             <a
-              href="https://m.me/yourpageid"
+              href="https://www.facebook.com/messages/t/2019179468375728?locale=vi_VN"
               target="_blank"
               className="w-12 h-12 rounded-full bg-sky-600 flex items-center justify-center shadow-lg hover:scale-110 transition"
             >
               <img src="/images/fb-messenger.png" alt="Messenger" className="w-7 h-7" />
             </a>
             <a
-              href="https://facebook.com/yourpage"
+              href="https://www.facebook.com/tanphatetek?locale=vi_VN"
               target="_blank"
               className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center shadow-lg hover:scale-110 transition"
             >
               <img src="/images/facebook.png" alt="Facebook" className="w-7 h-7" />
             </a>
             <a
-              href="https://www.youtube.com/channel/yourchannel"
+              href="https://www.youtube.com/@truyenthongtanphatetek876"
               target="_blank"
               className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center shadow-lg hover:scale-110 transition"
             >
